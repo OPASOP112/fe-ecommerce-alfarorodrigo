@@ -1,0 +1,22 @@
+<div class="app-layout">
+  <button class="mobile-toggle" (click)="toggleSidebar()">MENÚ</button>
+  <div class="overlay" [class.active]="isSidebarOpen" (click)="toggleSidebar()"></div>
+
+  <aside class="sidebar" [class.open]="isSidebarOpen">
+    <div class="brand">
+      <h2>SISTEMA DE VENTAS</h2>
+    </div>
+    
+    <nav class="nav-menu" (click)="closeOnMobile()">
+      <a routerLink="/productos" routerLinkActive="active">Gestión de Productos</a>
+    </nav>
+    
+    <div class="footer">
+      <button (click)="logout()" class="btn-logout">Cerrar Sesión</button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

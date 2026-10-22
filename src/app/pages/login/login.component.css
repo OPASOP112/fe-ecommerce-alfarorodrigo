@@ -1,0 +1,23 @@
+.login-container {
+  display: flex; justify-content: center; align-items: center;
+  height: 100vh; background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  font-family: 'Segoe UI', sans-serif;
+}
+.login-card {
+  background: white; padding: 2.5rem; border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%; max-width: 400px;
+}
+h2 { color: #1e293b; margin-bottom: 0.5rem; text-align: center; }
+p { color: #64748b; text-align: center; margin-bottom: 1.5rem; }
+.form-group { margin-bottom: 1.25rem; }
+label { display: block; margin-bottom: 0.5rem; color: #475569; font-weight: 600; }
+input {
+  width: 100%; padding: 0.75rem; border: 1px solid #cbd5e1;
+  border-radius: 0.5rem; box-sizing: border-box;
+}
+button {
+  width: 100%; background: #6366f1; color: white; border: none;
+  padding: 0.75rem; border-radius: 0.5rem; font-weight: bold; cursor: pointer;
+}
+button:disabled { background: #94a3b8; cursor: not-allowed; }
+.alert-error { background: #fee2e2; color: #991b1b; padding: 0.75rem; border-radius: 0.5rem; text-align: center; margin-bottom: 1rem; }
